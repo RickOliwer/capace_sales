@@ -1,12 +1,24 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+ 
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          light: "#e9e8e8",
+          dark: "#191919",
+          second: "#333",
+          oranges: "#ff752e",
+          red: "red",
+        },
+      },
+    },
   },
   plugins: [],
 }
