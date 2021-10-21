@@ -42,7 +42,7 @@ function Login() {
 						<label htmlFor="" className="block mb-2 font-bold text-gray-500" for="email">Email</label>
 						<input 
 						id="email" 
-						className="w-full p-3 text-gray-900 border border-gray-400 rounded outline-none focus:border-yellow-600" 
+						className="w-full p-3 border border-gray-400 rounded outline-none text-brand-dark focus:border-yellow-600" 
 						type="email" 
 						value={email} 
 						onChange={(e) => setEmail(e.target.value)} />

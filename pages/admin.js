@@ -16,7 +16,7 @@ const Admin = () => {
             <div className="relative flex flex-col items-center justify-center min-h-screen bg-brand-oranges">
                 <Update sale={sales}/>
                 <div className="absolute top-0 right-0 flex">
-                    <button className="block p-4 m-4 font-bold transition duration-500 rounded text-brand-light bg-brand-dark hover:text-brand-dark hover:bg-brand-light"><Link href="/">Back</Link></button>
+                <Link href="/"><button className="block p-4 m-4 font-bold transition duration-500 rounded text-brand-light bg-brand-dark hover:text-brand-dark hover:bg-brand-light">Back</button></Link>
 
                     <button onClick={() => signOut(auth)} className="block p-4 m-4 font-bold transition duration-500 rounded text-brand-light bg-brand-dark hover:text-brand-dark hover:bg-brand-light">Logga ut</button>
 

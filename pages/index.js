@@ -32,7 +32,7 @@ export default function Home() {
       {amount <= 0 ?  <Confetti width={width} height={height} /> : ''}
           
       <Head>
-        <title>Create Next App</title>
+        <title>Capace Media Sales</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="absolute top-0 left-0 flex flex-col justify-center w-1/2 p-4 text-white">
@@ -46,7 +46,7 @@ export default function Home() {
       </div>
 
       <div>
-      <button className="absolute bottom-0 right-0 block p-4 m-4 font-bold transition duration-500 rounded text-brand-light bg-brand-dark hover:text-brand-dark hover:bg-brand-light"><Link href="/admin">Admin</Link></button>
+      <Link href="/admin"><button className="absolute bottom-0 right-0 block p-4 m-4 font-bold transition duration-500 rounded text-brand-light bg-brand-dark hover:text-brand-dark hover:bg-brand-light">Admin</button></Link>
       </div>
 
     </div>
