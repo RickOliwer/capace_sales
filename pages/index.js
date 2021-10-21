@@ -28,7 +28,7 @@ export default function Home() {
   const exMoney = new Intl.NumberFormat('sv-SV', { style: 'currency', currency: 'SEK' }).format(amount)
   console.log('data', minifiedRecords);
   return (
-    <div className="relative flex flex-col items-center justify-center w-full h-full min-h-screen gap-4 py-2 bg-gray-900">
+    <div className="relative flex flex-col items-center justify-center w-full h-full min-h-screen gap-4 py-2 bg-brand-dark">
       {amount <= 0 ?  <Confetti width={width} height={height} /> : ''}
           
       <Head>
@@ -38,13 +38,16 @@ export default function Home() {
       <div className="absolute top-0 left-0 flex flex-col justify-center w-1/2 p-4 text-white">
         <h2>Capace media <span className="text-2xl ">sales</span></h2>
       </div>
-      <div className="flex flex-col items-center justify-center w-1/2 p-8 text-5xl text-white bg-gray-800 rounded ">
+      <div className="flex flex-col items-center justify-center w-1/2 p-8 text-5xl rounded text-brand-light bg-brand-second ">
       
         <div>
         { amount <= 0 ? 'Gratz' : exMoney}
         </div>
       </div>
 
+      <div>
+      <button className="absolute bottom-0 right-0 block p-4 m-4 font-bold transition duration-500 rounded text-brand-light bg-brand-dark hover:text-brand-dark hover:bg-brand-light"><Link href="/admin">Admin</Link></button>
+      </div>
 
     </div>
   )

@@ -3,6 +3,7 @@ import { Fetcher } from '../lib/api'
 import useSWR from 'swr'
 import { auth } from '../src/config/firebase.config'
 import { signOut } from '@firebase/auth'
+import Link from 'next/link'
 const Admin = () => {
 
     const { data: sales, error } = useSWR('/api/getData', Fetcher)
@@ -12,9 +13,14 @@ const Admin = () => {
 
     return (
 
-            <div className="flex flex-col items-center justify-center min-h-screen bg-yellow-600">
+            <div className="relative flex flex-col items-center justify-center min-h-screen bg-brand-oranges">
                 <Update sale={sales}/>
-                <button onClick={() => signOut(auth)} className="block p-4 m-4 font-bold text-gray-800 transition duration-500 bg-yellow-600 rounded hover:text-yellow-600 hover:bg-gray-800">Logga ut</button>
+                <div className="absolute top-0 right-0 flex">
+                    <button className="block p-4 m-4 font-bold transition duration-500 rounded text-brand-light bg-brand-dark hover:text-brand-dark hover:bg-brand-light"><Link href="/">Back</Link></button>
+
+                    <button onClick={() => signOut(auth)} className="block p-4 m-4 font-bold transition duration-500 rounded text-brand-light bg-brand-dark hover:text-brand-dark hover:bg-brand-light">Logga ut</button>
+
+                </div>
             </div> 
 
             

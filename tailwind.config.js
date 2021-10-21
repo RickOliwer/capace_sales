@@ -4,11 +4,6 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
- 
-    },
-  },
-  variants: {
-    extend: {
       colors: {
         brand: {
           light: "#e9e8e8",
@@ -18,6 +13,11 @@ module.exports = {
           red: "red",
         },
       },
+    },
+  },
+  variants: {
+    extend: {
+      
     },
   },
   plugins: [],
