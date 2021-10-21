@@ -1,7 +1,7 @@
 import { useRouter } from "next/dist/client/router";
 import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
-import Login from "./login";
+import Login from "./Login";
 
 const AuthGate = ({children}) => {
     const {user} = useContext(AuthContext)
