@@ -41,7 +41,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center w-1/2 p-8 text-5xl rounded text-brand-light bg-brand-second ">
       
         <div>
-        { amount <= 0 ? 'Gratz' : exMoney}
+        { amount <= 0 ? 'Congratulations <3' : exMoney}
         </div>
       </div>
 
